@@ -1,1 +1,3 @@
+#This is for java hadoop job. Test data is files before 1990.
+
 hadoop jar eg.jar DelaysFrequencyTable /user/mhm/delays/198*.csv /user/mhm/output/result1

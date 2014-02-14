@@ -1,3 +1,5 @@
+#This is for C streaming hadoop job. Test data is files before 1990.
+
 gcc -o mapper mapper.c
 gcc -o reducer reducer.c
 hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-streaming-1.2.1.jar -file mapper -mapper mapper -file reducer -reducer reducer -input /user/mhm/delays/198*.csv -output /user/mhm/output/result2
